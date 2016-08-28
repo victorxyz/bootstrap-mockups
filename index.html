@@ -4,8 +4,360 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello Front-End</title>
+
+  <!-- jQuery -->
+  <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+
+  <!-- Bootstrap libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+
+<!-- NAV BAR -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="row" id="row1">
+        <div class="col-xs-6">
+            <div class="nav navbar-nav navbar-left" id="microLogoDiv">
+              <a class="navbar-brand" href="#"><img id="microLogoImg" src="img/logo.png" /></a>
+            </div>
+            <ul class="nav navbar-nav collapse navbar-collapse">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav collapse navbar-collapse">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav collapse navbar-collapse">
+              <li class="">
+                <a href="#">Support</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-4">
+            <ul class="nav navbar-nav">
+              <form class="navbar-form collapse navbar-collapse">
+                 <div class="form-group" id="searchbox">
+                   <input type="text" class="form-control " placeholder="Search Microsoft.com"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    <!-- HOW? Need to put search icon over searchbox but it doesn't collapse -->
+                 </div>
+             </form>
+           </ul>
+           <ul class="nav navbar-nav">
+             <li class="">
+               <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+             </li>
+           </ul>
+           <ul class="nav navbar-nav">
+             <li class="">
+               <a href="#">Sign in</span></a>
+             </li>
+           </ul>
+        </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+<!-- FIRST BANNER -->
+  <img id="banner" src="img/topBanner.png" alt="topBanner" />
+
+
+<!-- FIRST INLINE IMAGES ROW -->
+  <div class="container-fluid">
+    <div class="row" id="row2">
+      <div class="col-xs-12 col-md-6" id="row2ImgLeft">
+          <div class="col-xs-6 col-md-6 col-xxs">
+            <img src="img/img1-1.jpg" class="imgInLine"/>
+            <p class="textboxes">
+              Xbox One<br>
+              Stay entertained for hours.<br>
+              Shop the latest consoles.
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-6 col-xxs">
+              <img src="img/img1-2.jpg" class="imgInLine"/>
+              <p class="textboxes">
+                Outlook<br>
+                Get the free email app for iOS,<br>
+                Android and Windows.
+              </p>
+          </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="col-xs-6 col-md-6 col-xxs">
+          <img src="img/img1-3.jpg" class="imgInLine"/>
+          <p class="textboxes">
+            Microsoft Store<br>
+            Find what you need for home,<br>
+            school, work and fun.
+          </p>
+        </div>
+        <div class="col-xs-6 col-md-6 col-xxs">
+            <img src="img/img1-4.jpg" class="imgInLine"/>
+            <p class="textboxes">
+              OneNote<br>
+              Get the free email app for iOS,<br>
+              Android and Windows.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+
+  <!-- SECOND BANNER -->
+    <img id="banner" src="img/2ndBanner.png" alt="2ndBanner" />
+
+
+  <!-- SECOND INLINE IMAGES ROW -->
+    <div class="container-fluid" id="row3Container">
+      <div class="row" id="row3">
+        <div class="col-xs-12 col-md-6">
+            <div class="col-xs-6 col-md-6 col-xxs">
+              <img src="img/img2-1.jpg" class="imgInLine"/>
+              <p class="textboxes">
+                New Office 365 for<br>
+                Enterprise<br>
+                Learn more about all the<br>
+                capabilities now available.
+              </p>
+            </div>
+            <div class="col-xs-6 col-md-6 col-xxs">
+                <img src="img/img2-2.jpg" class="imgInLine"/>
+                <p class="textboxes">
+                  Windows 10 Enterprise<br>
+                  Download the free 90-day evaluation for<br>
+                  IT professionals.
+                </p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="col-xs-6 col-md-6 col-xxs">
+            <img src="img/img2-3.jpg" class="imgInLine"/>
+            <p class="textboxes">
+              SQL Server 2016<br>
+              Faster, more secure and now available. Try<br>
+              it free.
+            </p>
+          </div>
+          <div class="col-xs-6 col-md-6 col-xxs">
+              <img src="img/img2-4.jpg" class="imgInLine"/>
+              <p class="textboxes">
+                Microsoft Dynamics CRM<br>
+                Experience the new features now<br>
+                available. Try it now.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+
+
+<!-- Follow Microsoft -->
+
+  <div class="container-fluid" id="row4Container">
+    <div class="row inline-block" id="row4">
+      <p id="textFollowMS" class="row4Elem inline-block">
+        Follow Microsoft
+      </p>
+      <img src="img/facebook.png" class="row4Elem inline-block" />
+      <img src="img/twitter.png" class="row4Elem inline-block" />
+    </div>
+  </div>
+
+<!-- Bottom row of extended links -->
+  <div class="container-fluid" id="row5Container">
+    <div class="row" id="row5">
+      <ul id="row5ulLeft">
+        <p class="row5P">
+          Learn
+        </p>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Windows</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Office</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Skype</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Outlook</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">OneDrive</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">MSN</a>
+        </li>
+      </ul>
+
+      <ul>
+        <p class="row5P">
+          Devices
+        </p>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Microsoft Surface</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Xbox</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">PC & laptops</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Microsoft Lumia</a>
+        </li>
+      </ul>
+
+      <ul>
+        <p class="row5P">
+          Microsoft Store
+        </p>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">View account</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Your orders</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Returns</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Sales & support</a>
+        </li>
+      </ul>
+
+      <ul>
+        <p class="row5P">
+          Downloads
+        </p>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Download Center</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Windows downloads</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Internet Explorer</a>
+        </li>
+      </ul>
+
+      <ul>
+        <p class="row5P">
+          Company
+        </p>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Careers</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Microsoft</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">News</a>
+        </li>
+        <li class="row5li hidden-xs">
+          <a class="row5aLinks" href="#">Site map</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- FINAL ROW -->
+
+
+
+  <div class="container-fluid" id="row6Container">
+    <div class="row" id="row6">
+      <div class="col-xxs inline-block" id="engSinDiv">
+          <p><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            English (Singapore)
+          </p>
+      </div>
+      <div class="col-xxs inline-block pull-right" id="bottomRightDiv">
+        <a href="#" class="bottomRightLinks">Contact us</a>
+        <a href="#" class="bottomRightLinks">Privacy & cookies</a>
+        <a href="#" class="bottomRightLinks">Terms of use</a>
+        <a href="#" class="bottomRightLinks">Trademarks</a>
+        <a href="#" class="bottomRightLinks">About our ads</a>
+        <span class="bottomRightLinks">© 2016 Microsoft</span>
+      </div>
+    </div>
+  </div><!-- /.container-fluid -->
+
+
+
+
+
+        <!--
+            <ul class="nav navbar-nav collapse navbar-collapse">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav collapse navbar-collapse">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav collapse navbar-collapse">
+              <li class="">
+                <a href="#">Support</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-xs-2">
+        </div>
+        <div class="col-xs-4">
+            <ul class="nav navbar-nav">
+              <form class="navbar-form collapse navbar-collapse">
+                 <div class="form-group" id="searchbox">
+                   <input type="text" class="form-control " placeholder="Search Microsoft.com"><span class="hicon glyphicon-search" aria-hidden="true"></span>
+                 </div>
+             </form>
+           </ul>
+           <ul class="nav navbar-nav">
+             <li class="">
+               <a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+             </li>
+           </ul>
+           <ul class="nav navbar-nav">
+             <li class="">
+               <a href="#">Sign in</span></a>
+             </li>
+           </ul>
+        </div>
+  </nav>
+ -->
+
+
+
+
+
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
